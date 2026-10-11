@@ -1,0 +1,17 @@
+{
+ "Q_openfoam_ml_s": 12.244,
+ "Q_analitik_ml_s": 12.247,
+ "umaks_openfoam_ms": 0.3106,
+ "umaks_analitik_ms": 0.3119,
+ "dpdx_gelismis_openfoam_pa_m": 50.08,
+ "dpdx_analitik_pa_m": 50.0,
+ "dp_toplam_openfoam_pa": 110.8,
+ "dp_toplam_analitik_pa": 100.0,
+ "giris_bolgesi_ek_kayip_yuzde": 10.8,
+ "re": 1553,
+ "gelisme_boyu_tahmin_m": 0.78,
+ "ag": "kama 2,5°, 800 × 24 hücre",
+ "cozucu": "OpenFOAM v2506 simpleFoam, laminer, yakınsama artığı < 1e-9",
+ "umaks_fark_yuzde": -0.42,
+ "dpdx_fark_yuzde": 0.16
+}

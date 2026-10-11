@@ -1,0 +1,9 @@
+FoamFile { version 2.0; format ascii; class volScalarField; object p; }
+dimensions [0 2 -2 0 0 0 0];   // kinematik basınç p/rho
+internalField uniform 0;
+boundaryField {
+  giris { type zeroGradient; }
+  cikis { type fixedValue; value uniform 0; }
+  cidar { type zeroGradient; }
+  on { type wedge; } arka { type wedge; }
+}

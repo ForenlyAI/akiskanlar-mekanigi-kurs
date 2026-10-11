@@ -1,0 +1,16 @@
+FoamFile { version 2.0; format ascii; class dictionary; object blockMeshDict; }
+// Laminer boru: R = 5 mm, L = 2 m; eksenel simetrik kama (2,5°), 24 × 800 hücre, cidara doğru sıklaşan
+scale 1;
+R 0.005; L 2.0;
+c #eval{ $R*cos(degToRad(1.25)) };
+s #eval{ $R*sin(degToRad(1.25)) };
+vertices ( (0 0 0) ($L 0 0) ($L $c $s) (0 $c $s) ($L $c #eval{-$s}) (0 $c #eval{-$s}) );
+blocks ( hex (0 1 4 5 0 1 2 3) (800 24 1) simpleGrading (1 0.3 1) );
+edges ();
+boundary (
+  giris { type patch; faces ((0 0 3 5)); }
+  cikis { type patch; faces ((1 4 2 1)); }
+  cidar { type wall;  faces ((5 3 2 4)); }
+  on    { type wedge; faces ((0 1 2 3)); }
+  arka  { type wedge; faces ((0 5 4 1)); }
+);

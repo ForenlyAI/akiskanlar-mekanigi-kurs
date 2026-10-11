@@ -1,0 +1,4 @@
+#!/bin/sh
+cd "${0%/*}" || exit 1
+blockMesh > log.blockMesh 2>&1 && checkMesh > log.checkMesh 2>&1 && simpleFoam > log.simpleFoam 2>&1
+tail -3 log.simpleFoam

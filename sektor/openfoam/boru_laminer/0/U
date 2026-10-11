@@ -1,0 +1,9 @@
+FoamFile { version 2.0; format ascii; class volVectorField; object U; }
+dimensions [0 1 -1 0 0 0 0];
+internalField uniform (0.15594 0 0);
+boundaryField {
+  giris { type fixedValue; value uniform (0.15594 0 0); }   // ortalama hız (elle hesap: 0,1559 m/s)
+  cikis { type zeroGradient; }
+  cidar { type noSlip; }
+  on { type wedge; } arka { type wedge; }
+}

@@ -1,0 +1,53 @@
+{
+ "boru_hf_epanet_m": 8.985,
+ "boru_hiz_epanet_ms": 2.0,
+ "D63_Q_epanet_ls": 7.31,
+ "D63_H_epanet_m": 34.66,
+ "D80_Q_epanet_ls": 10.95,
+ "D80_H_epanet_m": 28.01,
+ "D100_Q_epanet_ls": 13.58,
+ "D100_H_epanet_m": 21.55,
+ "D125_Q_epanet_ls": 14.95,
+ "D125_H_epanet_m": 17.65,
+ "karsilastirma": {
+  "boru_hf": {
+   "elle": 8.906,
+   "epanet": 8.985,
+   "fark_yuzde": 0.89
+  },
+  "calisma_Q": {
+   "elle": 10.969,
+   "epanet": 10.95,
+   "fark_yuzde": -0.17
+  },
+  "calisma_H": {
+   "elle": 27.97,
+   "epanet": 28.01,
+   "fark_yuzde": 0.14
+  },
+  "D63_Q": {
+   "elle": 7.33,
+   "epanet": 7.31,
+   "fark_yuzde": -0.27
+  },
+  "D80_Q": {
+   "elle": 10.97,
+   "epanet": 10.95,
+   "fark_yuzde": -0.18
+  },
+  "D100_Q": {
+   "elle": 13.59,
+   "epanet": 13.58,
+   "fark_yuzde": -0.07
+  },
+  "D125_Q": {
+   "elle": 14.95,
+   "epanet": 14.95,
+   "fark_yuzde": 0.0
+  }
+ },
+ "surum": {
+  "wntr": "1.5.0",
+  "cozucu": "EPANET 2.2 (WNTR EpanetSimulator)"
+ }
+}
