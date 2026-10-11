@@ -2,9 +2,17 @@
   "name": "Akışkanlar Mekaniği lab",
   "image": "mcr.microsoft.com/devcontainers/base:bookworm",
   "features": {
-    "ghcr.io/devcontainers/features/python:1": { "version": "os-provided", "installTools": false },
-    "ghcr.io/devcontainers/features/docker-in-docker:2": { "moby": false }
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "os-provided",
+      "installTools": false
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "moby": false
+    },
+    "ghcr.io/devcontainers/features/sshd:1": {}
   },
-  "remoteEnv": { "PATH": "${containerWorkspaceFolder}/.venv/bin:${containerEnv:PATH}" },
+  "remoteEnv": {
+    "PATH": "${containerWorkspaceFolder}/.venv/bin:${containerEnv:PATH}"
+  },
   "postCreateCommand": "python3 -m venv .venv && .venv/bin/pip install -q -r requirements.txt && docker pull -q opencfd/openfoam-default:2506"
 }
