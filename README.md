@@ -10,7 +10,7 @@ Forenly AI Academy kursu **Akışkanlar Mekaniği** için çalışma deposu. Her
 
 ## Kurulum
 
-En kolayı GitHub Codespaces: **Code → Codespaces → Create**. Ortam Python 3.12 ve Docker ile kendiliğinden kurulur.
+En kolayı GitHub Codespaces: **Code → Codespaces → Create**. Ortam ilk açılışta yaklaşık 3 dakikada kendiliğinden kurulur: Python sanal ortamı (`.venv`: NumPy, Matplotlib, WNTR), Docker ve OpenFOAM imajı. Terminalde `python` komutu `.venv`'i kullanmıyorsa önce `source .venv/bin/activate` yazın. (11.10.2026'da 2 çekirdekli Codespace'te denendi: dört adım ve `kontrol.py` geçti; OpenFOAM koşumu 2 dk 55 sn.)
 
 Kendi bilgisayarınızda kurmak için Python 3.10 ve üstü ile Docker gerekir:
 
