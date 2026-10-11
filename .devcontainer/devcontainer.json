@@ -1,6 +1,6 @@
 {
   "name": "Akışkanlar Mekaniği lab",
-  "image": "mcr.microsoft.com/devcontainers/python:3.12",
-  "features": { "ghcr.io/devcontainers/features/docker-in-docker:2": {} },
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+  "features": { "ghcr.io/devcontainers/features/docker-in-docker:2": { "moby": false } },
   "postCreateCommand": "pip install -r requirements.txt && docker pull opencfd/openfoam-default:2506"
 }
